@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.nauto.Vehicle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="448dp"
+            android:layout_height="336dp">
+
+            <RelativeLayout
+                android:layout_width="448dp"
+                android:layout_height="336dp">
+
+                <com.mam.lambo.CustomSurfaceView
+                    android:id="@+id/externalOverlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    />
+
+                <SurfaceView
+                    android:id="@+id/externalSurfaceView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/displayArea"
+            android:layout_width="120dp"
+            android:layout_height="336dp"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:orientation="vertical"
+                android:layout_height="336dp">
+
+                <CheckBox
+                    android:layout_width="110sp"
+                    android:layout_height="25sp"
+                    android:text="vehicle"
+                    android:id="@+id/vehicle"
+                    android:checked="false"
+                    />
+
+                <CheckBox
+                    android:layout_width="80sp"
+                    android:layout_height="25sp"
+                    android:text="lane"
+                    android:id="@+id/laneDetection"
+                    />
+
+                <CheckBox
+                    android:layout_width="80sp"
+                    android:layout_height="25sp"
+                    android:text="directory"
+                    android:id="@+id/directory"
+                    />
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:text="start"
+                        android:id="@+id/start"
+                        android:layout_height="35dp"
+                        android:layout_width="70dp"/>
+
+                    <Button
+                        android:text="test"
+                        android:id="@+id/test"
+                        android:layout_height="35dp"
+                        android:layout_width="40dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:text="stop"
+                        android:id="@+id/stop"
+                        android:layout_height="35dp"
+                        android:layout_width="60dp"/>
+
+                    <Button
+                        android:layout_height="35dp"
+                        android:id="@+id/save"
+                        android:text="save"
+                        android:layout_width="60dp"/>
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:text="fiducials"
+                    android:id="@+id/fiducials"
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"/>
+
+                <CheckBox
+                    android:text="snap Y"
+                    android:id="@+id/snapY"
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"/>
+
+                <RadioGroup
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:checkedButton="@+id/fiducialTL"
+                    android:id="@+id/fiducialGroup">
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="50dp"
+                            android:text="TL"
+                            android:id="@+id/fiducialTL"
+                            android:layout_height="25dp"/>
+
+                        <RadioButton
+                            android:layout_width="50dp"
+                            android:text="TR"
+                            android:id="@+id/fiducialTR"
+                            android:layout_height="25dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="50dp"
+                            android:text="BL"
+                            android:id="@+id/fiducialBL"
+                            android:layout_height="25dp"/>
+
+                        <RadioButton
+                            android:text="BR"
+                            android:id="@+id/fiducialBR"
+                            android:layout_width="50dp"
+                            android:layout_height="25dp"/>
+
+                    </LinearLayout>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
