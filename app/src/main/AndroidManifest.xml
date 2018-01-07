@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.nauto"
+<manifest package="com.mam.lambo"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -21,25 +21,13 @@
 
     <application
         tools:replace="android:name"
-        android:name=".Nautobahn"
+        android:name=".Anthea"
         android:icon="@mipmap/ic_launcher"
         android:allowBackup="true"
         android:label="@string/app_name"
         android:largeHeap="true"
         android:screenOrientation="sensorLandscape"
         android:theme="@style/AppTheme">
-        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="face"/>
-        <activity
-            android:name=".BigScreen"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/app_name"
-            android:screenOrientation="sensorLandscape"
-            android:theme="@style/AppTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
 
         <activity
             android:name=".Chimera"
@@ -50,51 +38,15 @@
         </activity>
 
         <activity
-            android:name=".Distraction"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/app_name"
-            android:screenOrientation="sensorLandscape"
-            android:theme="@style/AppTheme">
-            <intent-filter>
-                <action android:name="com.nauto.Distraction.action.launch"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </activity>
-
-        <activity
             android:name=".ImuLogger"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name"
             android:screenOrientation="sensorLandscape"
             android:theme="@style/AppTheme">
             <intent-filter>
-                <action android:name="com.nauto.ImuLogger.action.launch"/>
+                <action android:name="com.mam.lambo.ImuLogger.action.launch"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
-        </activity>
-
-        <activity
-            android:name=".Vehicle"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/app_name"
-            android:screenOrientation="sensorLandscape"
-            android:theme="@style/AppTheme">
-        </activity>
-
-        <activity
-            android:name=".OfflineAnalysis"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/app_name"
-            android:screenOrientation="sensorLandscape"
-            android:theme="@style/AppTheme">
-        </activity>
-
-        <activity
-            android:name=".IlBacio"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/app_name"
-            android:screenOrientation="sensorLandscape"
-            android:theme="@style/AppTheme">
         </activity>
 
         <activity
@@ -104,29 +56,13 @@
             android:screenOrientation="sensorLandscape"
             android:theme="@style/AppTheme">
             <intent-filter>
-                <action android:name="com.nauto.DogFood.action.launch"/>
+                <action android:name="com.mam.lambo.DogFood.action.launch"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
 
         <activity
             android:name=".Upload"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/app_name"
-            android:screenOrientation="sensorLandscape"
-            android:theme="@style/AppTheme">
-        </activity>
-
-        <activity
-            android:name=".CreateTestVectors"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/app_name"
-            android:screenOrientation="sensorLandscape"
-            android:theme="@style/AppTheme">
-        </activity>
-
-        <activity
-            android:name=".SweepFanSpeeds"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name"
             android:screenOrientation="sensorLandscape"
@@ -142,10 +78,10 @@
         </activity>
 
         <receiver
-            android:name="com.nauto.ExternalIntentProcessor"
+            android:name="com.mam.lambo.ExternalIntentProcessor"
             android:enabled="true">
             <intent-filter>
-                <action android:name="com.nauto.dogfood.stop" />
+                <action android:name="com.mam.lambo.dogfood.stop" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>

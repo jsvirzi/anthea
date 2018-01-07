@@ -6,9 +6,9 @@ import android.content.res.Resources;
 import android.util.Log;
 import android.util.Pair;
 
-import com.nauto.BigScreen;
-import com.nauto.DogFood;
-import com.nauto.Anthea;
+import com.mam.lambo.BigScreen;
+import com.mam.lambo.DogFood;
+import com.mam.lambo.Anthea;
 import com.nauto.modules.server.ISimpleServerListener;
 import com.nauto.modules.server.SimpleServer;
 import com.nauto.modules.uploader.DataUploader;

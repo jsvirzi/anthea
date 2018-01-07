@@ -1,4 +1,4 @@
-package com.nauto.nautobahn;
+package com.mam.lambo.anthea;
 
 import org.junit.Test;
 

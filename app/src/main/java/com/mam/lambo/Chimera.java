@@ -1,4 +1,4 @@
-package com.nauto;
+package com.mam.lambo;
 
 import android.Manifest;
 import android.annotation.TargetApi;
@@ -36,6 +36,7 @@ import com.nauto.modules.sensor.SensorRecorder;
 import com.nauto.modules.server.SimpleServer;
 import com.nauto.modules.utils.DataLogger;
 import com.nauto.modules.utils.Utils;
+import com.mam.lambo.IStatusListener;
 
 import java.io.File;
 import java.text.SimpleDateFormat;

@@ -11,8 +11,8 @@ import android.widget.ImageView;
 
 import com.mam.lambo.AlgoWrapper;
 import com.mam.lambo.CustomSurfaceView;
-import com.nauto.IStatusListener;
-import com.nauto.Anthea;
+import com.mam.lambo.IStatusListener;
+import com.mam.lambo.Anthea;
 
 import java.util.ArrayList;
 import java.util.List;

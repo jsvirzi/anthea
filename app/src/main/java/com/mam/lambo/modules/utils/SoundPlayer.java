@@ -8,7 +8,7 @@ import android.media.AudioTrack;
 import android.os.Handler;
 import android.os.HandlerThread;
 
-import com.nauto.R;
+import com.mam.lambo.R;
 
 import java.io.InputStream;
 

@@ -1,4 +1,4 @@
-package com.nauto;
+package com.mam.lambo;
 
 import android.app.Activity;
 import android.content.Context;

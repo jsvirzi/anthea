@@ -1,4 +1,4 @@
-package com.nauto;
+package com.mam.lambo;
 
 /**
  * Created by jsvirzi on 1/11/17.
