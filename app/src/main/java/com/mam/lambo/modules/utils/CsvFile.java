@@ -1,4 +1,4 @@
-package com.nauto.modules.utils;
+package com.mam.lambo.modules.utils;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;

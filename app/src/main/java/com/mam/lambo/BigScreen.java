@@ -12,8 +12,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.nauto.modules.calibration.OrientationCalibration;
-import com.nauto.modules.sensor.SensorModule;
+import com.mam.lambo.modules.calibration.OrientationCalibration;
+import com.mam.lambo.modules.sensor.SensorModule;
 
 /**
  * Created by jsvirzi on 6/10/16.
@@ -77,24 +77,6 @@ public class BigScreen extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(bigScreen, ImuLogger.class);
-                startActivity(intent);
-            }
-        });
-
-        buttonIlBacio = (Button) findViewById(R.id.ilbacio);
-        buttonIlBacio.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(bigScreen, IlBacio.class);
-                startActivity(intent);
-            }
-        });
-
-        buttonServer = (Button) findViewById(R.id.server);
-        buttonServer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(bigScreen, Upload.class);
                 startActivity(intent);
             }
         });

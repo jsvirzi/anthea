@@ -1,4 +1,4 @@
-package com.nauto.modules.camera;
+package com.mam.lambo.modules.camera;
 
 /**
  * Created by jsvirzi on 1/19/17.

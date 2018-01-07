@@ -1,4 +1,4 @@
-package com.nauto.modules.obd;
+package com.mam.lambo.modules.obd;
 
 import android.app.AlertDialog;
 import android.bluetooth.BluetoothAdapter;

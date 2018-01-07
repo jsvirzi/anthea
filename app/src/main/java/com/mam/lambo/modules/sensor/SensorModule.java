@@ -1,4 +1,4 @@
-package com.nauto.modules.sensor;
+package com.mam.lambo.modules.sensor;
 
 /*
  * TODO implement destroy() that frees up the static buffers
@@ -17,7 +17,7 @@ import android.os.HandlerThread;
 import android.os.Handler;
 import android.util.Log;
 
-import com.nauto.modules.calibration.IDeviceOrientationCalibrationListener;
+import com.mam.lambo.modules.calibration.IDeviceOrientationCalibrationListener;
 
 import static android.os.Process.THREAD_PRIORITY_DEFAULT;
 import static android.os.Process.THREAD_PRIORITY_URGENT_DISPLAY;

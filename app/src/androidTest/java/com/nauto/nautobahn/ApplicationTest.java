@@ -1,4 +1,4 @@
-package com.nauto.nautobahn;
+package com.mam.lambo.nautobahn;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

@@ -10,14 +10,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.nauto.modules.camera.Common;
-import com.nauto.modules.camera.ConfigurationParameters;
-import com.nauto.modules.camera.H264Surface;
-import com.nauto.modules.camera.SimpleCameraModule;
-import com.nauto.modules.sensor.SensorModule;
-import com.nauto.modules.sensor.SensorRecorder;
-import com.nauto.modules.utils.DataLogger;
-import com.nauto.modules.utils.Utils;
+import com.mam.lambo.modules.camera.Common;
+import com.mam.lambo.modules.camera.ConfigurationParameters;
+import com.mam.lambo.modules.camera.H264Surface;
+import com.mam.lambo.modules.camera.SimpleCameraModule;
+import com.mam.lambo.modules.sensor.SensorModule;
+import com.mam.lambo.modules.sensor.SensorRecorder;
+import com.mam.lambo.modules.utils.DataLogger;
+import com.mam.lambo.modules.utils.Utils;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -25,7 +25,7 @@ import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import static com.nauto.modules.utils.Utils.humanReadableTime;
+import static com.mam.lambo.modules.utils.Utils.humanReadableTime;
 
 /**
  * Created by jsvirzi on 5/6/17.

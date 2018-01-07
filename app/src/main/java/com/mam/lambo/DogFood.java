@@ -13,15 +13,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.nauto.modules.camera.Common;
-import com.nauto.modules.camera.ConfigurationParameters;
-import com.nauto.modules.camera.H264Surface;
-import com.nauto.modules.camera.ICameraModuleStatusListener;
-import com.nauto.modules.camera.SimpleCameraModule;
-import com.nauto.modules.sensor.SensorModule;
-import com.nauto.modules.sensor.SensorRecorder;
-import com.nauto.modules.utils.DataLogger;
-import com.nauto.modules.utils.Utils;
+import com.mam.lambo.modules.camera.Common;
+import com.mam.lambo.modules.camera.ConfigurationParameters;
+import com.mam.lambo.modules.camera.H264Surface;
+import com.mam.lambo.modules.camera.ICameraModuleStatusListener;
+import com.mam.lambo.modules.camera.SimpleCameraModule;
+import com.mam.lambo.modules.sensor.SensorModule;
+import com.mam.lambo.modules.sensor.SensorRecorder;
+import com.mam.lambo.modules.utils.DataLogger;
+import com.mam.lambo.modules.utils.Utils;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -29,7 +29,7 @@ import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import static com.nauto.modules.utils.Utils.humanReadableTime;
+import static com.mam.lambo.modules.utils.Utils.humanReadableTime;
 
 /**
  * Created by jsvirzi on 1/15/17.
@@ -79,7 +79,7 @@ public class DogFood extends Activity implements MediaPlayer.OnCompletionListene
 
     public void sendDistress(final String msg, final int level) {
         Intent intent = new Intent();
-        intent.setAction("com.nautobahn.distress");
+        intent.setAction("com.mam.lambobahn.distress");
         intent.putExtra("message", msg);
         intent.putExtra("level", level);
         context.sendBroadcast(intent);
@@ -88,7 +88,7 @@ public class DogFood extends Activity implements MediaPlayer.OnCompletionListene
 
     public void sendStatus(final String msg, final int whichCamera) {
         Intent intent = new Intent();
-        intent.setAction("com.nautobahn.status");
+        intent.setAction("com.mam.lambobahn.status");
         intent.putExtra("message", msg);
         intent.putExtra("led", whichCamera);
         context.sendBroadcast(intent);
@@ -118,12 +118,12 @@ public class DogFood extends Activity implements MediaPlayer.OnCompletionListene
 
             if (exposureTime > exposureTimeThreshold) {
                 Intent intent = new Intent();
-                intent.setAction("com.nautobahn.itstoodark");
+                intent.setAction("com.mam.lambobahn.itstoodark");
                 Log.d(TAG, "I'm scared of the dark");
                 context.sendBroadcast(intent);
             } else {
                 Intent intent = new Intent();
-                intent.setAction("com.nautobahn.itslight");
+                intent.setAction("com.mam.lambobahn.itslight");
                 Log.d(TAG, "Good Morning Sunshine");
                 context.sendBroadcast(intent);
             }

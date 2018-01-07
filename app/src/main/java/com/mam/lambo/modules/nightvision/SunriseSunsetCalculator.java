@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.nauto.modules.nightvision;
+package com.mam.lambo.modules.nightvision;
 
 import java.util.Calendar;
 import java.util.TimeZone;
 
-import com.nauto.modules.nightvision.SolarEventCalculator;
-import com.nauto.modules.nightvision.Location;
+import com.mam.lambo.modules.nightvision.SolarEventCalculator;
+import com.mam.lambo.modules.nightvision.Location;
 
 /* taken from git@github.com:mikereedell/sunrisesunsetlib-java.git */
 

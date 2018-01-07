@@ -14,13 +14,13 @@ import android.util.Log;
 
 import com.mam.lambo.AlgoWrapper;
 import com.mam.lambo.commandandcontrol.RemoteHttpCommandAndControl;
-import com.nauto.modules.camera.Common;
-import com.nauto.modules.camera.SimpleCameraModule;
-import com.nauto.modules.nightvision.Location;
-import com.nauto.modules.nightvision.SunriseSunsetCalculator;
-import com.nauto.modules.obd.ObdModule;
-import com.nauto.modules.sensor.SensorModule;
-import com.nauto.modules.sensor.SensorRecorder;
+import com.mam.lambo.modules.camera.Common;
+import com.mam.lambo.modules.camera.SimpleCameraModule;
+import com.mam.lambo.modules.nightvision.Location;
+import com.mam.lambo.modules.nightvision.SunriseSunsetCalculator;
+import com.mam.lambo.modules.obd.ObdModule;
+import com.mam.lambo.modules.sensor.SensorModule;
+import com.mam.lambo.modules.sensor.SensorRecorder;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -37,11 +37,10 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-import com.nauto.modules.server.ISimpleServerListener;
-import com.nauto.modules.server.SimpleServer;
-import com.nauto.modules.utils.SoundPlayer;
-import com.nauto.modules.utils.Utils;
-import com.qualcomm.snapdragon.sdk.face.FacialProcessing;
+import com.mam.lambo.modules.server.ISimpleServerListener;
+import com.mam.lambo.modules.server.SimpleServer;
+import com.mam.lambo.modules.utils.SoundPlayer;
+import com.mam.lambo.modules.utils.Utils;
 
 public class Anthea extends Application {
 
@@ -133,13 +132,6 @@ public class Anthea extends Application {
                 }
             }
 
-//            sdCardDirectory = "/storage/external_SD"; /* LG Flex2 */
-//            sdCardDirectory = "/storage/0123-4567"; /* LG Flex5 */
-//            sdCardDirectory = "/storage/8A69-7F25";
-//            sdCardDirectory = "/storage/8AE8-1DFD";
-//            sdCardDirectory = "/storage/emulated/legacy"; /* for M9 */ // /Android/data/com.nauto.nautobahn/files";
-//            sdCardDirectory = "/storage/self/primary"; // TODO TODO TODO
-//            String sdCardDirectory = "/storage/DFD5-A4F6";
             String externalDir = context.getExternalFilesDir(null).getAbsolutePath();
             String deviceDir = Environment.getExternalStorageDirectory().getAbsolutePath();
             int pos = deviceDir.length();

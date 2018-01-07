@@ -1,17 +1,17 @@
-package com.nauto.modules.sensor;
+package com.mam.lambo.modules.sensor;
 
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.util.Log;
 
-import com.nauto.modules.utils.DataLogger;
+import com.mam.lambo.modules.utils.DataLogger;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import static com.nauto.modules.utils.Utils.getBufferedWriter;
+import static com.mam.lambo.modules.utils.Utils.getBufferedWriter;
 
 /**
  * Created by jsvirzi on 6/12/16.

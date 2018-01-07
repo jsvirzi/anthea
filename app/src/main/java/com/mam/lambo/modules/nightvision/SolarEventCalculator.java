@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.nauto.modules.nightvision;
+package com.mam.lambo.modules.nightvision;
 
 import java.math.BigDecimal;
 import java.math.MathContext;
@@ -22,8 +22,8 @@ import java.math.RoundingMode;
 import java.util.Calendar;
 import java.util.TimeZone;
 
-import com.nauto.modules.nightvision.Zenith;
-import com.nauto.modules.nightvision.Location;
+import com.mam.lambo.modules.nightvision.Zenith;
+import com.mam.lambo.modules.nightvision.Location;
 
 /**
  * Parent class of the Sunrise and Sunset calculator classes.

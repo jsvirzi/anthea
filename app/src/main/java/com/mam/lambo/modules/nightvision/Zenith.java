@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.nauto.modules.nightvision;
+package com.mam.lambo.modules.nightvision;
 
 import java.math.BigDecimal;
 

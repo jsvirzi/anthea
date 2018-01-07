@@ -1,17 +1,17 @@
-package com.nauto.modules.utils;
+package com.mam.lambo.modules.utils;
 
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.util.Log;
 
-import com.nauto.modules.camera.*;
+import com.mam.lambo.modules.camera.*;
 
 import java.io.BufferedWriter;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.nauto.modules.utils.Utils.getBufferedWriter;
+import static com.mam.lambo.modules.utils.Utils.getBufferedWriter;
 
 /**
  * Created by jsvirzi on 2/4/17.
@@ -94,7 +94,7 @@ public class DataLogger {
             return;
         }
         if (thread != null) {
-            com.nauto.modules.camera.Utils.goodbyeThread(thread);
+            com.mam.lambo.modules.camera.Utils.goodbyeThread(thread);
             thread = null;
             handler = null;
         }

@@ -1,4 +1,4 @@
-package com.nauto.modules.server;
+package com.mam.lambo.modules.server;
 
 import android.app.Activity;
 import android.os.Handler;
@@ -6,7 +6,7 @@ import android.os.HandlerThread;
 import android.util.Log;
 import android.util.Pair;
 
-import com.nauto.modules.utils.Utils;
+import com.mam.lambo.modules.utils.Utils;
 
 import java.io.IOException;
 import java.io.InputStream;

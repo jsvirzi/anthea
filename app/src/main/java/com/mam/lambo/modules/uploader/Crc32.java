@@ -1,4 +1,4 @@
-package com.nauto.modules.uploader;
+package com.mam.lambo.modules.uploader;
 
 /**
  * Created by jsvirzi on 1/27/17.

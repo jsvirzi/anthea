@@ -26,16 +26,16 @@ import android.widget.TextView;
 
 import com.mam.lambo.AlgoWrapper;
 import com.mam.lambo.CustomSurfaceView;
-import com.nauto.modules.camera.Common;
-import com.nauto.modules.camera.ConfigurationParameters;
-import com.nauto.modules.camera.H264Surface;
-import com.nauto.modules.camera.JpegSurface;
-import com.nauto.modules.camera.SimpleCameraModule;
-import com.nauto.modules.sensor.SensorModule;
-import com.nauto.modules.sensor.SensorRecorder;
-import com.nauto.modules.server.SimpleServer;
-import com.nauto.modules.utils.DataLogger;
-import com.nauto.modules.utils.Utils;
+import com.mam.lambo.modules.camera.Common;
+import com.mam.lambo.modules.camera.ConfigurationParameters;
+import com.mam.lambo.modules.camera.H264Surface;
+import com.mam.lambo.modules.camera.JpegSurface;
+import com.mam.lambo.modules.camera.SimpleCameraModule;
+import com.mam.lambo.modules.sensor.SensorModule;
+import com.mam.lambo.modules.sensor.SensorRecorder;
+import com.mam.lambo.modules.server.SimpleServer;
+import com.mam.lambo.modules.utils.DataLogger;
+import com.mam.lambo.modules.utils.Utils;
 import com.mam.lambo.IStatusListener;
 
 import java.io.File;
@@ -146,7 +146,6 @@ public class Chimera extends Activity implements IStatusListener {
         checkBoxInternalVideo = (CheckBox) findViewById(R.id.videoSourceInternal);
         checkBoxExternalHd = (CheckBox) findViewById(R.id.externalHd);
         checkBoxInternalHd = (CheckBox) findViewById(R.id.internalHd);
-        checkBoxNN = (CheckBox) findViewById(R.id.dnn);
         checkBoxExternalDisplay = (CheckBox) findViewById(R.id.externalDisplay);
         checkBoxInternalDisplay = (CheckBox) findViewById(R.id.internalDisplay);
         checkBoxExternalDnn = (CheckBox) findViewById(R.id.externalDnn);
@@ -338,7 +337,7 @@ public class Chimera extends Activity implements IStatusListener {
 //                        Runnable runnable = new Runnable() {
 //                            @Override
 //                            public void run() {
-//                                nautobahn.simpleCameraModuleExternal = new SimpleCameraModule(externalConfigurationParameters);
+//                                mam.lambobahn.simpleCameraModuleExternal = new SimpleCameraModule(externalConfigurationParameters);
 //                            }
 //                        };
 //                        Utils.post(workerHandler, runnable, true);

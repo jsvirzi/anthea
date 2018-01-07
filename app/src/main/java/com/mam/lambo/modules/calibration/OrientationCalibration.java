@@ -1,10 +1,10 @@
-package com.nauto.modules.calibration;
+package com.mam.lambo.modules.calibration;
 
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.util.Log;
 
-import com.nauto.modules.sensor.SensorModule;
+import com.mam.lambo.modules.sensor.SensorModule;
 
 import java.util.ArrayList;
 import java.util.List;

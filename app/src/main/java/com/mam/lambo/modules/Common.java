@@ -1,4 +1,4 @@
-package com.nauto.modules;
+package com.mam.lambo.modules;
 
 /**
  * Created by jsvirzi on 4/28/17.

@@ -9,9 +9,9 @@ import android.util.Pair;
 import com.mam.lambo.BigScreen;
 import com.mam.lambo.DogFood;
 import com.mam.lambo.Anthea;
-import com.nauto.modules.server.ISimpleServerListener;
-import com.nauto.modules.server.SimpleServer;
-import com.nauto.modules.uploader.DataUploader;
+import com.mam.lambo.modules.server.ISimpleServerListener;
+import com.mam.lambo.modules.server.SimpleServer;
+import com.mam.lambo.modules.uploader.DataUploader;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;

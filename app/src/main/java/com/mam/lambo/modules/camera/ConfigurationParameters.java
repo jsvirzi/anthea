@@ -1,4 +1,4 @@
-package com.nauto.modules.camera;
+package com.mam.lambo.modules.camera;
 
 import android.app.Activity;
 import android.content.Context;

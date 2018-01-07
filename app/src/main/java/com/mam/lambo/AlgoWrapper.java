@@ -3,7 +3,7 @@ package com.mam.lambo;
 import android.os.Handler;
 import android.os.HandlerThread;
 
-import com.nauto.modules.utils.Utils;
+import com.mam.lambo.modules.utils.Utils;
 
 import java.nio.ByteBuffer;
 

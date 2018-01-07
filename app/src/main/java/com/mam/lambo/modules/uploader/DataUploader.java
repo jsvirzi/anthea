@@ -1,4 +1,4 @@
-package com.nauto.modules.uploader;
+package com.mam.lambo.modules.uploader;
 
 import android.content.Context;
 import android.os.Handler;
@@ -7,7 +7,7 @@ import android.os.SystemClock;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 
-import com.nauto.modules.server.SimpleServer;
+import com.mam.lambo.modules.server.SimpleServer;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -65,7 +65,7 @@ public class DataUploader {
         }
 
         if (deviceId == null) {
-            deviceId = "nautobahn";
+            deviceId = "mam.lambobahn";
         }
 
         thread = new HandlerThread("DataUploader");

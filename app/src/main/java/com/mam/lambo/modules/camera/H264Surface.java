@@ -1,4 +1,4 @@
-package com.nauto.modules.camera;
+package com.mam.lambo.modules.camera;
 
 import android.hardware.camera2.CameraCaptureSession;
 import android.hardware.camera2.CaptureRequest;
@@ -13,7 +13,7 @@ import android.os.HandlerThread;
 import android.util.Log;
 import android.view.Surface;
 
-import com.nauto.modules.utils.DataLogger;
+import com.mam.lambo.modules.utils.DataLogger;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedWriter;
@@ -25,9 +25,9 @@ import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.nauto.modules.utils.Utils.closeStream;
-import static com.nauto.modules.utils.Utils.getBufferedWriter;
-import static com.nauto.modules.utils.Utils.writeLine;
+import static com.mam.lambo.modules.utils.Utils.closeStream;
+import static com.mam.lambo.modules.utils.Utils.getBufferedWriter;
+import static com.mam.lambo.modules.utils.Utils.writeLine;
 
 /**
  * Created by jsvirzi on 1/10/17.

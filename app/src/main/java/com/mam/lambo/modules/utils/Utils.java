@@ -1,4 +1,4 @@
-package com.nauto.modules.utils;
+package com.mam.lambo.modules.utils;
 
 import android.Manifest;
 import android.annotation.TargetApi;
@@ -9,7 +9,7 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import android.util.Log;
 
-import com.nauto.modules.camera.Common;
+import com.mam.lambo.modules.camera.Common;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedWriter;

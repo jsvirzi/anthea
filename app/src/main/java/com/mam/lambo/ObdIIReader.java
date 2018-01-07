@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 
-import com.nauto.modules.obd.ObdModule;
+import com.mam.lambo.modules.obd.ObdModule;
 
 /**
  * Created by jsvirzi on 2/10/17.

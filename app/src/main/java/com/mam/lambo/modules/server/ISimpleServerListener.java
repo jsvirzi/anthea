@@ -1,4 +1,4 @@
-package com.nauto.modules.server;
+package com.mam.lambo.modules.server;
 
 import android.util.Pair;
 
