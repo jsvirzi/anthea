@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="vertical"
-    tools:context="com.mam.lambo.Distraction">
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              tools:context="com.mam.lambo.Chimera">
 
     <LinearLayout
         android:layout_width="560sp"
@@ -16,357 +15,333 @@
         android:orientation="vertical">
 
         <LinearLayout
-            android:id="@+id/displayArea"
-            android:layout_width="580sp"
+            android:layout_width="240sp"
             android:layout_height="280sp"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             >
 
             <LinearLayout
                 android:layout_width="240sp"
-                android:layout_height="280sp"
-                android:orientation="vertical"
-                >
+                android:layout_height="180sp">
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="240sp"
                     android:layout_height="180sp">
 
-                    <RelativeLayout
+                    <com.mam.lambo.CustomSurfaceView
+                        android:id="@+id/externalOverlay"
                         android:layout_width="240sp"
-                        android:layout_height="180sp">
-
-                        <com.mam.lambo.CustomSurfaceView
-                            android:id="@+id/externalOverlay"
-                            android:layout_width="240sp"
-                            android:layout_height="180sp"
-                            android:layout_alignParentLeft="true"
-                            />
-
-                        <SurfaceView
-                            android:id="@+id/externalSurfaceView"
-                            android:layout_width="240sp"
-                            android:layout_height="180sp"
-                            android:layout_alignParentLeft="true"
-                            />
-
-                    </RelativeLayout>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="240sp"
-                    android:layout_height="25sp"
-                    android:orientation="horizontal">
-
-                    <CheckBox
-                        android:layout_width="80sp"
-                        android:layout_height="25sp"
-                        android:text="display"
-                        android:id="@+id/externalDisplay"
-                        android:checked="true"
+                        android:layout_height="180sp"
+                        android:layout_alignParentLeft="true"
                         />
 
-                    <CheckBox
-                        android:layout_width="80sp"
-                        android:layout_height="25sp"
-                        android:text="h264"
-                        android:id="@+id/externalEncodeH264"
-                        android:checked="false"
+                    <SurfaceView
+                        android:id="@+id/externalSurfaceView"
+                        android:layout_width="240sp"
+                        android:layout_height="180sp"
+                        android:layout_alignParentLeft="true"
                         />
 
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="240sp"
-                    android:layout_height="25sp"
-                    android:orientation="horizontal">
-
-                    <CheckBox
-                        android:layout_width="80sp"
-                        android:layout_height="25sp"
-                        android:text="dnn"
-                        android:id="@+id/externalDnn"
-                        android:checked="false"
-                        />
-
-                    <CheckBox
-                        android:layout_width="80sp"
-                        android:layout_height="25sp"
-                        android:text="1080p"
-                        android:id="@+id/externalHd"
-                        android:checked="true"
-                        />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="240sp"
-                    android:layout_height="25sp"
-                    android:orientation="horizontal">
-
-                    <CheckBox
-                        android:layout_width="80sp"
-                        android:layout_height="25sp"
-                        android:text="enable"
-                        android:id="@+id/videoSourceExternal"
-                        android:checked="true"
-                        />
-
-                    <CheckBox
-                        android:layout_width="80sp"
-                        android:layout_height="25sp"
-                        android:text="unwarp"
-                        android:id="@+id/externalUnwarp"
-                        android:checked="false"
-                        />
-
-                </LinearLayout>
+                </RelativeLayout>
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="240sp"
-                android:layout_height="280sp"
-                android:orientation="vertical">
+                android:layout_height="25sp"
+                android:orientation="horizontal">
 
-                <LinearLayout
-                    android:layout_width="240sp"
-                    android:layout_height="180sp">
-
-                    <RelativeLayout
-                        android:layout_width="240sp"
-                        android:layout_height="180sp">
-
-                        <com.mam.lambo.CustomSurfaceView
-                            android:id="@+id/internalOverlay"
-                            android:layout_width="240sp"
-                            android:layout_height="180sp"
-                            android:layout_alignParentLeft="true"
-                            />
-
-                        <SurfaceView
-                            android:id="@+id/internalSurfaceView"
-                            android:layout_width="240sp"
-                            android:layout_height="180sp"
-                            android:layout_alignParentLeft="true"
-                            />
-
-                    </RelativeLayout>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="240sp"
+                <CheckBox
+                    android:id="@+id/externalDisplay"
+                    android:layout_width="80sp"
                     android:layout_height="25sp"
-                    android:orientation="horizontal">
-
-                    <CheckBox
-                        android:layout_width="80sp"
-                        android:layout_height="25sp"
-                        android:text="display"
-                        android:id="@+id/internalDisplay"
-                        android:checked="true"
-                        />
-
-                    <CheckBox
-                        android:layout_width="80sp"
-                        android:layout_height="25sp"
-                        android:text="h264"
-                        android:id="@+id/internalEncodeH264"
-                        android:checked="false"
-                        />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="240sp"
-                    android:layout_height="25sp"
-                    android:orientation="horizontal">
-
-                    <CheckBox
-                        android:layout_width="80sp"
-                        android:layout_height="25sp"
-                        android:text="dnn"
-                        android:id="@+id/internalDnn"
-                        android:checked="false"
-                        />
-
-                    <CheckBox
-                        android:layout_width="80sp"
-                        android:layout_height="25sp"
-                        android:text="1080p"
-                        android:id="@+id/internalHd"
-                        android:checked="true"
+                    android:checked="true"
+                    android:text="display"
                     />
 
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="240sp"
+                <CheckBox
+                    android:id="@+id/externalEncodeH264"
+                    android:layout_width="80sp"
                     android:layout_height="25sp"
-                    android:orientation="horizontal">
-
-                    <CheckBox
-                        android:layout_width="80sp"
-                        android:layout_height="25sp"
-                        android:text="enable"
-                        android:id="@+id/videoSourceInternal"
-                        android:checked="true"
-                        />
-
-                    <CheckBox
-                        android:layout_width="80sp"
-                        android:layout_height="25sp"
-                        android:text="unwarp"
-                        android:id="@+id/internalUnwarp"
-                        android:checked="false"
+                    android:checked="false"
+                    android:text="h264"
                     />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="240sp"
-                    android:layout_height="25sp">
-
-                    <CheckBox
-                        android:layout_width="80sp"
-                        android:layout_height="25sp"
-                        android:text="face"
-                        android:id="@+id/useQtiFace"
-                        android:checked="false"
-                        />
-
-                </LinearLayout>
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="120sp"
-                android:layout_height="300sp"
-                android:orientation="vertical">
+                android:layout_width="240sp"
+                android:layout_height="25sp"
+                android:orientation="horizontal">
 
                 <CheckBox
-                    android:layout_width="110sp"
-                    android:layout_height="25sp"
-                    android:text="AE/AF"
-                    android:id="@+id/autoExposureFocus"
-                    android:checked="false"
-                    />
-
-                <CheckBox
-                    android:layout_width="110sp"
-                    android:layout_height="25sp"
-                    android:text="record"
-                    android:id="@+id/record"
-                    android:checked="true"
-                    />
-
-                <CheckBox
-                    android:layout_width="110sp"
-                    android:layout_height="25sp"
-                    android:text="OSI"
-                    android:id="@+id/opticalStabilization"
-                    android:checked="false"
-                    />
-
-                <!--<CheckBox-->
-                    <!--android:layout_width="110sp"-->
-                    <!--android:layout_height="25sp"-->
-                    <!--android:text="imu"-->
-                    <!--android:id="@+id/imu"-->
-                    <!--android:checked="false"-->
-                    <!--/>-->
-
-                <CheckBox
-                    android:layout_width="110sp"
-                    android:layout_height="25sp"
-                    android:text="snapshot"
-                    android:id="@+id/snapshot"
-                    android:checked="false"
-                    />
-
-                <CheckBox
-                    android:layout_width="110sp"
-                    android:layout_height="25sp"
-                    android:text="fast imu"
-                    android:id="@+id/fastImu"
-                    android:checked="true"
-                    />
-
-                <Button
-                    android:layout_width="110sp"
-                    android:layout_height="35sp"
-                    android:text="start ext"
-                    android:id="@+id/startExternal"
-                    />
-
-                <Button
-                    android:layout_width="110sp"
-                    android:layout_height="35sp"
-                    android:text="start int"
-                    android:id="@+id/startInternal"
-                    />
-
-                <Button
-                    android:layout_width="110sp"
-                    android:layout_height="35sp"
-                    android:text="start imu"
-                    android:id="@+id/startImu"
-                    />
-
-                <Button
+                    android:id="@+id/externalDnn"
                     android:layout_width="80sp"
-                    android:layout_height="35sp"
-                    android:text="exit"
-                    android:id="@+id/exit"
+                    android:layout_height="25sp"
+                    android:checked="false"
+                    android:text="dnn"
                     />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="15sp"
-                    android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/externalHd"
+                    android:layout_width="80sp"
+                    android:layout_height="25sp"
+                    android:checked="true"
+                    android:text="1080p"
+                    />
 
-                    <ImageView
-                        android:layout_width="15sp"
-                        android:layout_height="15sp"
-                        android:id="@+id/status1"
-                        />
+            </LinearLayout>
 
-                    <ImageView
-                        android:layout_width="15sp"
-                        android:layout_height="15sp"
-                        android:id="@+id/status2"
-                        />
+            <LinearLayout
+                android:layout_width="240sp"
+                android:layout_height="25sp"
+                android:orientation="horizontal">
 
-                </LinearLayout>
+                <CheckBox
+                    android:id="@+id/videoSourceExternal"
+                    android:layout_width="80sp"
+                    android:layout_height="25sp"
+                    android:checked="true"
+                    android:text="enable"
+                    />
+
+                <CheckBox
+                    android:id="@+id/externalUnwarp"
+                    android:layout_width="80sp"
+                    android:layout_height="25sp"
+                    android:checked="false"
+                    android:text="unwarp"
+                    />
 
             </LinearLayout>
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="480sp"
-            android:layout_height="60sp"
+            android:layout_width="240sp"
+            android:layout_height="280sp"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20sp"
-                android:id="@+id/text1"
-                android:text="Hello"
-                android:layout_marginTop="5sp"
-                />
+            <LinearLayout
+                android:layout_width="240sp"
+                android:layout_height="180sp">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20sp"
-                android:id="@+id/text2"
-                android:text="Hello"
-                android:layout_marginTop="5sp"
-                />
+                <RelativeLayout
+                    android:layout_width="240sp"
+                    android:layout_height="180sp">
+
+                    <com.mam.lambo.CustomSurfaceView
+                        android:id="@+id/internalOverlay"
+                        android:layout_width="240sp"
+                        android:layout_height="180sp"
+                        android:layout_alignParentLeft="true"
+                        />
+
+                    <SurfaceView
+                        android:id="@+id/internalSurfaceView"
+                        android:layout_width="240sp"
+                        android:layout_height="180sp"
+                        android:layout_alignParentLeft="true"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="240sp"
+                android:layout_height="25sp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/internalDisplay"
+                    android:layout_width="80sp"
+                    android:layout_height="25sp"
+                    android:checked="true"
+                    android:text="display"
+                    />
+
+                <CheckBox
+                    android:id="@+id/internalEncodeH264"
+                    android:layout_width="80sp"
+                    android:layout_height="25sp"
+                    android:checked="false"
+                    android:text="h264"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="240sp"
+                android:layout_height="25sp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/internalDnn"
+                    android:layout_width="80sp"
+                    android:layout_height="25sp"
+                    android:checked="false"
+                    android:text="dnn"
+                    />
+
+                <CheckBox
+                    android:id="@+id/internalHd"
+                    android:layout_width="80sp"
+                    android:layout_height="25sp"
+                    android:checked="true"
+                    android:text="1080p"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="240sp"
+                android:layout_height="25sp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/videoSourceInternal"
+                    android:layout_width="80sp"
+                    android:layout_height="25sp"
+                    android:checked="true"
+                    android:text="enable"
+                    />
+
+                <CheckBox
+                    android:id="@+id/internalUnwarp"
+                    android:layout_width="80sp"
+                    android:layout_height="25sp"
+                    android:checked="false"
+                    android:text="unwarp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="240sp"
+                android:layout_height="25sp">
+
+                <CheckBox
+                    android:id="@+id/useQtiFace"
+                    android:layout_width="80sp"
+                    android:layout_height="25sp"
+                    android:checked="false"
+                    android:text="face"
+                    />
+
+            </LinearLayout>
 
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="120sp"
+            android:layout_height="300sp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/autoExposureFocus"
+                android:layout_width="110sp"
+                android:layout_height="25sp"
+                android:checked="true"
+                android:text="AE/AF"
+                />
+
+            <CheckBox
+                android:id="@+id/record"
+                android:layout_width="110sp"
+                android:layout_height="25sp"
+                android:checked="true"
+                android:text="record"
+                />
+
+            <CheckBox
+                android:id="@+id/opticalStabilization"
+                android:layout_width="110sp"
+                android:layout_height="25sp"
+                android:checked="true"
+                android:text="OSI"
+                />
+
+            <!--<CheckBox-->
+            <!--android:layout_width="110sp"-->
+            <!--android:layout_height="25sp"-->
+            <!--android:text="imu"-->
+            <!--android:id="@+id/imu"-->
+            <!--android:checked="false"-->
+            <!--/>-->
+
+            <CheckBox
+                android:id="@+id/fastImu"
+                android:layout_width="110sp"
+                android:layout_height="25sp"
+                android:checked="true"
+                android:text="fast imu"
+                />
+
+            <Button
+                android:id="@+id/startExternal"
+                android:layout_width="110sp"
+                android:layout_height="35sp"
+                android:text="start ext"
+                />
+
+            <Button
+                android:id="@+id/startImu"
+                android:layout_width="110sp"
+                android:layout_height="35sp"
+                android:text="start imu"
+                />
+
+            <Button
+                android:id="@+id/exit"
+                android:layout_width="80sp"
+                android:layout_height="35sp"
+                android:text="exit"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="15sp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/status1"
+                    android:layout_width="15sp"
+                    android:layout_height="15sp"
+                    />
+
+                <ImageView
+                    android:id="@+id/status2"
+                    android:layout_width="15sp"
+                    android:layout_height="15sp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="480sp"
+        android:layout_height="60sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            android:layout_marginTop="5sp"
+            android:text="Hello"
+            />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            android:layout_marginTop="5sp"
+            android:text="Hello"
+            />
 
     </LinearLayout>
 

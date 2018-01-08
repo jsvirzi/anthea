@@ -62,7 +62,7 @@ public class Anthea extends Application {
 
     static {
         instance = null;
-        System.loadLibrary("CameraModule_JNI");
+//        System.loadLibrary("CameraModule_JNI");
     }
 
     @Override
