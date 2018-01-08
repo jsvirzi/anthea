@@ -8,4 +8,6 @@
 /captures
 app/src/main/obj
 app/src/main/libs
+app/local.properties
+app/.idea/
 share/
